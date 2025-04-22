@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/thehantos/static/css/main.fb49fdf3.css",
-    "main.js": "/thehantos/static/js/main.3deb8636.js",
+    "main.js": "/thehantos/static/js/main.732a5b02.js",
     "static/js/453.d61bd94e.chunk.js": "/thehantos/static/js/453.d61bd94e.chunk.js",
     "index.html": "/thehantos/index.html",
     "main.fb49fdf3.css.map": "/thehantos/static/css/main.fb49fdf3.css.map",
-    "main.3deb8636.js.map": "/thehantos/static/js/main.3deb8636.js.map",
+    "main.732a5b02.js.map": "/thehantos/static/js/main.732a5b02.js.map",
     "453.d61bd94e.chunk.js.map": "/thehantos/static/js/453.d61bd94e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb49fdf3.css",
-    "static/js/main.3deb8636.js"
+    "static/js/main.732a5b02.js"
   ]
 }
