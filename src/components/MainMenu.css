@@ -1,0 +1,130 @@
+.header {
+  background-color: #1c1c1c;
+  padding: 25px;
+  color: #f0fff0; /* Светлый белый с лёгким зелёным оттенком */
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  animation: glowEffect 3s infinite, textFade 10s linear infinite;
+}
+
+@keyframes glowEffect {
+  0%, 100% {
+      text-shadow: 0 0 5px #f0fff0, 0 0 10px #a2ff99, 0 0 20px #99e6b3; /* Бело-зелёное свечение */
+  }
+  50% {
+      text-shadow: 0 0 20px #f0fff0, 0 0 30px #a2ff99, 0 0 40px #99e6b3;
+  }
+}
+
+@keyframes textFade {
+  0% {
+      color: #f0fff0; /* Светлый белый старт */
+  }
+  50% {
+      color: #a2ff99; /* Яркий зелёный пик */
+  }
+  100% {
+      color: #f0fff0; /* Возвращение к светлому белому */
+  }
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 160px); /* Учитываем размер хедера и футера */
+  padding: 20px;
+  background: linear-gradient(-45deg, #1a1a1a, #2f4f4f, #1c1c1c, #2d3436); /* Градиент для фона */
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite; /* Анимация движения градиента */
+  color: white; /* Белый цвет текста */
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+.menu-button {
+  margin: 12px;
+  width: 300px; /* Установленная ширина для всех кнопок */
+  height: 60px; /* Установленная высота для всех кнопок */
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: #f0fff0; /* Белый текст с зелёным оттенком */
+  background-color: #1c1c1c; /* Тёмный фон */
+  border: 2px solid #a2ff99; /* Зелёный контур вместо красного */
+  border-radius: 8px; /* Закруглённые углы */
+  text-align: center; /* Горизонтальное центрирование текста */
+  display: flex; /* Включаем flexbox */
+  align-items: center; /* Вертикальное центрирование текста */
+  justify-content: center; /* Горизонтальное центрирование текста */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* Пространство между буквами */
+  box-shadow: 0 6px 10px rgba(153, 230, 179, 0.5); /* Зелёная тень вместо красной */
+}
+
+.menu-button:hover {
+  transform: translateY(-3px); /* Поднятие при наведении */
+  box-shadow: 0 8px 15px rgba(153, 230, 179, 0.7); /* Углублённая зелёная тень */
+  background-color: #2f2f2f;
+  border-color: #a2ff99; /* Яркий зелёный контур вместо красного */
+}
+
+.active {
+  transform: translateY(-5px); /* Сильное поднятие */
+  box-shadow: 0 10px 20px rgba(153, 230, 179, 0.9); /* Глубокая зелёная тень */
+  background-color: #292929; /* Углублённый чёрный фон */
+  color: #a2ff99; /* Яркий зелёный текст вместо красного */
+  border-color: #a2ff99; /* Яркий зелёный контур */
+}
+
+
+
+
+.footer {
+  background-color: #0f0f0f; /* Темный фон */
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #f0fff0; /* Светлый текст */
+  border-top: 2px solid #99e6b3; /* Зелёный верхний контур */
+}
+
+.footer-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #a2ff99; /* Светло-зеленый цвет текста */
+  text-transform: uppercase; /* Заглавные буквы */
+  letter-spacing: 2px; /* Расстояние между буквами */
+}
+
+
+
+
+
+
+.main-page {
+  padding: 20px;
+  text-align: center;
+  color: white; /* Белый текст */
+}

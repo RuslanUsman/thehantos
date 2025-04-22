@@ -1,0 +1,162 @@
+.admins-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #292929; /* Тёмный фон */
+  color: #f0fff0; /* Белый текст с лёгким зелёным оттенком */
+}
+
+.header {
+  background-color: #1c1c1c; /* Чёрный фон */
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #a2ff99; /* Светло-зелёный текст вместо красного */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.admins-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.admin-card {
+  background-color: #1c1c1c; /* Тёмный фон карточки */
+  border: 2px solid #a2ff99; /* Светло-зелёный контур вместо красного */
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(153, 230, 179, 0.5); /* Зелёная тень */
+  text-align: center;
+}
+
+.admin-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 2px solid #99e6b3; /* Зелёный контур изображения */
+}
+
+.admin-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #a2ff99; /* Светло-зелёный текст вместо красного */
+  margin-bottom: 10px;
+}
+
+.telegram-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f0fff0; /* Белый текст с лёгким зелёным оттенком */
+  background-color: #1c1c1c; /* Тёмный фон кнопки */
+  border: 2px solid #a2ff99; /* Светло-зелёный контур вместо красного */
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  box-shadow: 0 6px 10px rgba(153, 230, 179, 0.5); /* Зелёная тень */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.telegram-button:hover {
+  background-color: #2f2f2f; /* Стальной серый фон */
+  border-color: #99e6b3; /* Более яркий зелёный контур */
+  box-shadow: 0 8px 15px rgba(153, 230, 179, 0.7); /* Более глубокая зелёная тень */
+  transform: translateY(-3px);
+}
+
+.telegram-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer {
+  background-color: #0f0f0f; /* Самый тёмный оттенок */
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #a2ff99; /* Светло-зелёный текст вместо красного */
+  border-top: 2px solid #99e6b3; /* Зелёный верхний контур */
+}
+
+@media (max-width: 768px) {
+  .admins-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .admin-card {
+      width: 80%; /* Увеличиваем ширину карточек для маленьких экранов */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+      font-size: 28px; /* Уменьшаем размер текста заголовка */
+      padding: 10px;
+  }
+
+  .admin-name {
+      font-size: 16px; /* Уменьшаем размер имени администратора */
+  }
+
+  .telegram-button {
+      font-size: 14px; /* Уменьшаем размер кнопки */
+      padding: 8px 12px;
+  }
+
+  .telegram-icon {
+      width: 16px;
+      height: 16px; /* Уменьшаем размеры иконки Telegram */
+  }
+
+
+
+
+  
+  .footer {
+    background-color: #0f0f0f; /* Глубокий тёмный фон */
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #f0fff0; /* Белый текст с лёгким зелёным оттенком */
+    border-top: 2px solid #99e6b3; /* Зелёный верхний контур */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #a2ff99; /* Светло-зелёный текст */
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1); /* Лёгкое увеличение при наведении */
+}
+
+
+}

@@ -1,0 +1,174 @@
+.building-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #292929; /* Тёмный фон */
+  color: #f0fff0; /* Белый текст с лёгким зелёным оттенком */
+}
+
+.header {
+  background-color: #1c1c1c; /* Чёрный фон */
+  padding: 20px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #a2ff99; /* Светло-зелёный текст вместо красного */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.building-rules-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.building-rules-list li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 4px solid #a2ff99; /* Светло-зелёный контур вместо красного */
+  background-color: #1c1c1c; /* Тёмный фон */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(153, 230, 179, 0.5); /* Лёгкая зелёная тень */
+}
+
+.building-rules-list li strong {
+  color: #a2ff99; /* Светло-зелёный акцент вместо красного */
+}
+
+.prohibited {
+  color: #99e6b3; /* Светло-зелёный акцент для запрещённого */
+  font-weight: bold;
+}
+
+.allowed {
+  color: #17a2b8; /* Синий акцент для разрешённого */
+  font-weight: bold;
+}
+
+.notice {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #99e6b3; /* Светло-зелёный акцент вместо красного */
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  color: #f0fff0; /* Белый текст с лёгким зелёным оттенком */
+  background-color: #1c1c1c; /* Тёмный фон */
+  border: 2px solid #a2ff99; /* Светло-зелёный контур вместо красного */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0 6px 10px rgba(153, 230, 179, 0.5); /* Зелёная тень */
+  text-decoration: none;
+}
+
+.menu-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(153, 230, 179, 0.7); /* Углублённая зелёная тень */
+  background-color: #2f2f2f;
+  border-color: #a2ff99; /* Яркий зелёный контур вместо красного */
+}
+
+.footer {
+  background-color: #0f0f0f; /* Глубокий тёмный фон */
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #f0fff0; /* Белый текст с лёгким зелёным оттенком */
+  border-top: 2px solid #99e6b3; /* Зелёный верхний контур */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #a2ff99; /* Светло-зелёный текст */
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1); /* Лёгкое увеличение при наведении */
+}
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    .building-rules-list {
+      margin: 10px 0;
+    }
+  
+    .building-rules-list li {
+      padding: 8px; /* Компактность для небольших экранов */
+      font-size: 14px; /* Уменьшение размера текста */
+    }
+  
+    .header {
+      font-size: 28px; /* Заголовок на планшетах */
+    }
+  
+    .menu-button {
+      padding: 10px 20px;
+      font-size: 16px; /* Оптимизация кнопок */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .building-rules-list {
+      margin: 5px 0;
+    }
+  
+    .building-rules-list li {
+      font-size: 12px; /* Ещё компактнее */
+      margin-bottom: 8px;
+    }
+  
+    .header {
+      font-size: 24px;
+      padding: 5px; /* Уменьшение для маленьких экранов */
+    }
+  
+    .notice {
+      font-size: 14px; /* Размер текста уведомления */
+    }
+  
+    .menu-button {
+      font-size: 14px;
+      padding: 8px 15px; /* Уменьшение кнопок */
+    }
+  
+    .footer {
+      font-size: 12px;
+      padding: 5px; /* Компактный футер */
+    }
+  }
+  
